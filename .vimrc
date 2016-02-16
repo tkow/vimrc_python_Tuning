@@ -77,7 +77,6 @@ if has('unnamedplus')
    set clipboard& clipboard+=unnamedplus,unnamed
 else
 " set clipboard& clipboard+=unnamed,autoselect 2013-06-24 10:00
-   autoselect 削除
    set clipboard& clipboard+=unnamed
 endif
 
@@ -97,6 +96,15 @@ NeoBundleLazy "lambdalisue/vim-django-support", {
   \ }}
 
 NeoBundleFetch 'Shougo/neobundle.vim'
+" solarized
+NeoBundle 'altercation/vim-colors-solarized'
+" mustang
+NeoBundle 'croaker/mustang-vim'
+" " jellybeans
+NeoBundle 'nanotech/jellybeans.vim'
+" " molokai
+NeoBundle 'tomasr/molokai'
+"
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'davidhalter/jedi-vim'
 NeoBundle 'scrooloose/syntastic'
@@ -104,7 +112,8 @@ NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimfiler'
 NeoBundle 'Shougo/vimshell'
-NeoBundle 'Shougo/neocomplcache'
+NeoBundle 'Shougo/neocomplete.vim'
+NeoBundle 'ujihisa/unite-colorscheme'
 
 NeoBundleLazy "lambdalisue/vim-pyenv", {
       \ "depends": ['davidhalter/jedi-vim'],
